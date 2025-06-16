@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="title">My Image Gallery</h1>
+
+  <div class="filters">
+    <button class="filter-btn" data-category="all">All</button>
+    <button class="filter-btn" data-category="nature">Nature</button>
+    <button class="filter-btn" data-category="family">Family</button>
+    <button class="filter-btn" data-category="festivals">Festivals</button>
+    <button class="filter-btn" data-category="tours">Tours</button>
+    <button class="filter-btn" data-category="weekends">Weekends</button>
+  </div>
+
+  <div class="gallery">
+    <!-- Nature -->
+    <div class="image" data-category="nature"><img src="https://picsum.photos/id/1015/600/400" alt="Nature 1" /></div>
+    <div class="image" data-category="nature"><img src="n2.png" alt="Nature 2"></div>
+    <div class="image" data-category="nature"><img src="n3.png" alt="Nature 3"></div>
+    <div class="image" data-category="nature"><img src="n4.png" alt="Nature 4"></div>
+
+    <!-- Family -->
+    <div class="image" data-category="family"><img src="f3.png" alt="Family 3" /></div>
+    <div class="image" data-category="family"><img src="f4.png" alt="Family 4" /></div>
+    <div class="image" data-category="family"><img src="f1.png" alt="Family 1" /></div>
+    <div class="image" data-category="family"><img src="f2.png" alt="Family 2" /></div>
+
+    <!-- Festivals -->
+    <div class="image" data-category="festivals"><img src="fes1.png" alt="Festival 1" /></div>
+    <div class="image" data-category="festivals"><img src="fes2.png" alt="Festival 2" /></div>
+    <div class="image" data-category="festivals"><img src="fes3.png" alt="Festival 3" /></div>
+
+    <!-- Tours -->
+    <div class="image" data-category="tours"><img src="t1.png" alt="Tour 1" /></div>
+    <div class="image" data-category="tours"><img src="t2.png" alt="Tour 2" /></div>
+    <div class="image" data-category="tours"><img src="t3.png" alt="Tour 3" /></div>
+
+    <!-- Weekends -->
+    <div class="image" data-category="weekends"><img src="w1.png" alt="Weekend 1" /></div>
+    <div class="image" data-category="weekends"><img src="w2.png" alt="Weekend 2" /></div>
+    <div class="image" data-category="weekends"><img src="w3.png" alt="Weekend 3" /></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" />
+    <div class="nav">
+      <button id="prevBtn">&#10094;</button>
+      <button id="nextBtn">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
